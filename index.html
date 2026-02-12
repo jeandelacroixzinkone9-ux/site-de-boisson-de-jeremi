@@ -15,9 +15,32 @@
         fon-family: Arial, sans-serif;
     }
     .logo {
-        width: 120px;
+        width: 220px;
         display: block;
         margin: 0 auto;
+    }
+    body {
+        background-color: #000;
+        color: white;
+        font-family: 'georgia', serif;
+    }
+    .header-luxe {
+        tex-aling: center;
+        padding: 30px 0;
+        background:linear-gradient(black, #111);
+        border-bottom: 2px solid gold;
+    }
+    .logo {
+        width: 250px;
+        margin-bottom: 10px
+    }
+    .h1 {
+        color:gold;
+        letter-spacing: 3px;
+        font-size: 28px;
+    }
+    .logo {
+        width: 300px;
     }
     body{
         background:f4f4f4;
@@ -56,6 +79,9 @@
         margin-top:30px;
     }
     .carte{
+        background-color: #111;
+        border: 1px solid gold;
+        margin: 15px;
         backroung:white;
         padding:20px;
         border-radius:10px;
@@ -74,12 +100,13 @@
     .prix{
         font-weight:bold;
         margin:10px 0;
-        color:#0a7d3b;
+        color: gold;
+        font-size: 18px;
     }
     /* bouton */
     .btn{
-        background:#ff9800;
-        color:white;
+        background-color: gold;
+        color:black;
         padding:10px 15px;
         text-decoration:none;
         border-radius:5px;
@@ -87,7 +114,7 @@
         transition:0.3s;
     }
     .btn:hover{
-        background:#e68900;
+        background:#d4af37;
     }
     /* CONTACT */
     #contact{
@@ -113,7 +140,7 @@
 </head>
 <body>
 
-<header>
+<header class="header-luxe">
     <img src="logo.png" alt="Logo ZINKONE Jeremi" class="logo">
     <h1>ZINKONE Jeremi</h1>
     <p>vente de boisson premium a ouagadougou</p>
@@ -160,14 +187,14 @@
              <img src="ricard.jpg" alt="bouteille Ricard" class="produit-img">
              <h3>Ricard</h3>
              <p class="prix">9000 FCFA</p>
-              <a href="ttps://wa.me/22662003688?text=Bonjour%20je%20veux%20commander%20Ricard" class="btn">commander</a>
+              <a href="https://wa.me/22662003688?text=Bonjour%20je%20veux%20commander%20Ricard" class="btn">commander</a>
         </div>
 
          <div class="carte">
             <img src="black-label.jpg" alt="bouteille Black Label" class="produit-img">
             <h3>Black Label</h3>
             <p class="prix">17000 FCFA</p>
-            <a href="ttps://wa.me/22662003688?text=Bonjour%20je%20veux%20commander%20Black%20Lbel" class="btn">commander</a>
+            <a href="https://wa.me/22662003688?text=Bonjour%20je%20veux%20commander%20Black%20Lbel" class="btn">commander</a>
          </div>
 
     </div>
@@ -189,6 +216,7 @@
 </html>
 
         
+
 
 
 
