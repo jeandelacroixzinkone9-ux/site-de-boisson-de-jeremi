@@ -62,13 +62,24 @@
     nav a:hover{
         color:#ff9800;
     }
+    nav a {
+        color: gold;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+    nav {
+        text-align: center;
+        padding: 15px 0;
+    }
     /* HERO */
     .hero{
         text-align:center;
         padding:50px 20px;
     }
     .hero h2{
-        font-size:32px
+        font-size :40px
+        color: gold;
+        margin-top:30px;
         margin-bottom:15px;
     }
     /* PRODUITS */
@@ -86,10 +97,11 @@
         padding:20px;
         border-radius:10px;
         box-shadow:0 5px 15px rgba(0,0,0,01);
-        transition:0.3s;
+        transition: transform 0.3s ease;
     }
     .carte:hover{
         transform:translateY(-5px);
+        transform: scale(1.05);
     }
     .produit-img{
         width:100%;
@@ -129,6 +141,11 @@
         padding:20px;
         font-size:14px;
     }
+    slogan {
+        color: gold;
+        font-style: italic;
+        margin-top: -10px;
+    }
     /* RESPONSIVE */
     @media(max-width:600px){
         header h1{
@@ -144,6 +161,7 @@
     <img src="logo.png" alt="Logo ZINKONE Jeremi" class="logo">
     <h1>ZINKONE Jeremi</h1>
     <p>vente de boisson premium a ouagadougou</p>
+    <p class="slogan">L`elegance dans chacque bouteille</p>
 </header>
 
 
@@ -155,6 +173,22 @@
 <section class="hero">
     <h2>Boisson de qualite</h2>
     <p>Red label . Jack Daniel`s . Double black . Ricard . Black label</p>
+</section>
+
+<section class="avis">
+    <h2>Avis Clients</h2>
+    <p>"service rapide et serieux"</p>
+    <p>"Produits authentigue et livraison rapide."</p>
+</section>
+
+<section class="why">
+    <h2>Pourquoi choisir ZINKONE Jeremi ?</h2>
+    <ul>
+        <li>Produits 100% authentique</li>
+        <li>Livraison rapide a ouagadougou</li>
+        <li>Paiement securise orange Money</li>
+        <li>Service client disponible 24/7</li>
+    </ul>
 </section>
 
 <section id="produits">
@@ -216,6 +250,7 @@
 </html>
 
         
+
 
 
 
