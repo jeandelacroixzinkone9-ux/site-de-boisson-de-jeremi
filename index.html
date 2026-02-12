@@ -2,52 +2,121 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=devive-widh, initial-scale=1.0">
-    <meta name="description" content="Boisson Jeremi propose des boissons de qualite. Decouvrez nos produits et passez commande.">
+    <meta name="viewport" content="width=device-widh, initial-scale=1.0">
+    <meta name="description" content="ZINKONE Jeremi propose des boissons de qualite. Decouvrez nos produits et passez commande.">
     <meta name="author" content="Jeremi">
     <title>ZINKONE jeremi - Boisson</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        fon-family: Arial, sans-serif;
+    }
+    body{
+        background:f4f4f4;
+    }
+    /* Header */
+    header{
+        backround:#0a7d3b;
+        color:white;
+        text-align:center;
+        padding:40px 20px;
+    }
+    header h1{
+        font-size:40px;
+    }
+    header p{
+        margin-top:10px;
+    }
+    /* navigation */
+    nav a:hover{
+        color:#ff9800;
+    }
+    /* HERO */
+    .hero{
+        text-align:center;
+        padding:50px 20px;
+    }
+    .hero h2{
+        font-size:32px
+        margin-bottom:15px;
+    }
+    /* PRODUITS */
+    .produits-c0ntainer{
+        display:grid;
+        grid-template-colums:repeat(auto-fit,minmax(250px,1fr));
+        gap:20px;
+        margin-top:30px;
+    }
+    .carte{
+        backroung:white;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 5px 15px rgba(0,0,0,01);
+        transition:0.3s;
+    }
+    .carte:hover{
+        transform:translateY(-5px);
+    }
+    .produit-img{
+        width:100%;
+        height:250px;
+        object-fit:cover;
+        border-radius:8px;
+    }
+    .prix{
+        font-weight:bold;
+        margin:10px 0;
+        color:#0a7d3b;
+    }
+    /* bouton */
+    .btn{
+        background:#ff9800;
+        color:white;
+        padding:10px 15px;
+        text-decoration:none;
+        border-radius:5px;
+        display:inline-block;
+        transition:0.3s;
+    }
+    .btn:hover{
+        background:#e68900;
+    }
+    /* CONTACT */
+    #contact{
+        background;white;
+        padding:40px 20px;
+        text-align:center;
+    }
+    footer{
+        background:#222;
+        color:white;
+        text-align:center;
+        padding:20px;
+        font-size:14px;
+    }
+    /* RESPONSIVE */
+    @media(max-width:600px){
+        header h1{
+            font-size:28px;
         }
-        header {
-            background-color: #0a7d3b;
-            color: white;
-            padding: 20ps;
-            text-align: center;
-        }
-        button {
-            background-color: #ff9800;
-            color:white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer
-        }
-        button:hover {
-            background-color: #e68900;
-        }
-        h1 {
-            font-size: 48px;
-        }
+    }
     </style>
     <meta name="google-site-verification" content="RW4ntH2yXOGVSfOVl-ZwGKbNmsa13on_kuAH1DegAglo"/>
 </head>
 <body>
 
 <header>
-    <h1>ZINKONE jeremi</h1>
+    <h1>ZINKONE Jeremi</h1>
     <p>vente de boisson premium a ouagadougou</p>
 </header>
 
 
 <nav>
     <a href="#produits">Produits</a>
-    <a href="contact">contact</a>
+    <a href="#contact">contact</a>
 </nav>
 
 <section class="hero">
@@ -58,41 +127,41 @@
 <section id="produits">
     <h2>Nos produits</h2>
 
-    <div class="produits">
+    <div class="produits-container">
 
         <div class="carte">
             <img src="image/red-label.jpg" alt="bouteille red-label" class="produit-img">
            <h3>Red Label</h3> 
            <p class="prix">8000 FCFA</p>
-           <a href="https://wa.me/22662003688" class="btn">commander</a>
+           <a href="https://wa.me/22662003688?text=Bonjour%20je%20veux%20commander%20Red%20Label" class="btn">commander</a>
         </div>
 
         <div class="carte">
              <img src="image/Jack Daniel.jpg" alt="bouteille Jack Daniel" class="produit-img">
             <h3>Jack Daniel`s</h3>
             <p class="prix">14000 FCFA</p>
-            <a href="https://wa.me/22662003688" class="btn">commander</a>
+            <a href="https://wa.me/22662003688text=Bonjour%20je%20veux%20commander%20RJack%20Daniel" class="btn">commander</a>
         </div>
 
         <div class="carte">
              <img src="image/Double Black.jpg" alt="bouteille Double Black" class="produit-img">
             <h3>Double Black</h3>
              <p class="prix">20000 FCFA</p>
-              <a href="https://wa.me/22662003688" class="btn">commander</a>
+              <a href="https://wa.me/22662003688text=Bonjour%20je%20veux%20commander%20Double%20Black" class="btn">commander</a>
         </div>
 
         <div class="carte">
              <img src="image/Ricard.jpg" alt="bouteille Ricard" class="produit-img">
              <h3>Ricard</h3>
              <p class="prix">9000 FCFA</p>
-              <a href="ttps://wa.me/22662003688" class="btn">commander</a>
+              <a href="ttps://wa.me/22662003688text=Bonjour%20je%20veux%20commander%20Ricard" class="btn">commander</a>
         </div>
 
          <div class="carte">
             <img src="image/Black Label.jpg" alt="bouteille Black Label" class="produit-img">
             <h3>Black Label</h3>
             <p class="prix">17000 FCFA</p>
-            <a href="ttps://wa.me/22662003688" class="btn">commander</a>
+            <a href="ttps://wa.me/22662003688text=Bonjour%20je%20veux%20commander%20Black%20Lbel" class="btn">commander</a>
          </div>
 
     </div>
@@ -114,6 +183,7 @@
 </html>
 
         
+
 
 
 
