@@ -3,9 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta name="description" content="Boutique alcool à Ouagadougou. ZINKONE Jeremi propose Red Label, Jack Daniel's, Double Black, Ricard, Black Label avec livraison rapide à Ouaga.">
+<meta name="keywords" content="alcool Ouagadougou, whisky Ouaga, Red Label Burkina, Jack Daniels Ouagadougou, livraison boisson Ouaga">
 <meta name="author" content="ZINKONE Jeremi">
-<title>Boutique alcool Ouagadougou | ZINKONE Jeremi</title>
+
+<title>Boutique Alcool Ouagadougou | ZINKONE Jeremi</title>
 
 <style>
 *{
@@ -45,7 +48,7 @@ body{
     margin-top:10px;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav{
     text-align:center;
     padding:15px;
@@ -80,19 +83,6 @@ section{
     text-align:center;
 }
 
-.avis{
-    background:#111;
-}
-
-.why ul{
-    list-style:none;
-    margin-top:15px;
-}
-
-.why li{
-    margin:10px 0;
-}
-
 /* PRODUITS */
 .produits-container{
     display:grid;
@@ -107,10 +97,16 @@ section{
     padding:20px;
     border-radius:10px;
     transition:0.3s;
+    animation:fadeIn 1s ease-in-out;
 }
 
 .carte:hover{
     transform:scale(1.05);
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
 }
 
 .produit-img{
@@ -183,75 +179,71 @@ footer{
     <p>Red Label • Jack Daniel's • Double Black • Ricard • Black Label</p>
 </section>
 
-<section class="avis">
-    <h2>Avis Clients</h2>
-    <p>⭐⭐⭐⭐⭐ Service rapide et sérieux</p>
-    <p>⭐⭐⭐⭐⭐ Produits authentiques et livraison rapide</p>
-</section>
-
-<section class="why">
-    <h2>Pourquoi choisir ZINKONE Jeremi ?</h2>
-    <ul>
-        <li>✔ Produits 100% authentiques</li>
-        <li>✔ Livraison rapide à Ouagadougou</li>
-        <li>✔ Paiement sécurisé Orange Money</li>
-        <li>✔ Service client disponible</li>
-    </ul>
-</section>
-
 <section id="produits">
-    <h2>Nos Produits</h2>
+<h2>Nos Produits</h2>
 
-    <div class="produits-container">
+<div class="produits-container">
 
-        <div class="carte">
-            <img src="red-label.jpg" alt="Red Label à Ouagadougou" class="produit-img">
-            <h3>Red Label</h3>
-            <p class="prix">8000 FCFA</p>
-            <a href="https://wa.me/22662003688?text=Bonjour je veux commander Red Label" class="btn">Commander</a>
-        </div>
+<div class="carte">
+<img src="red-label.jpg" class="produit-img">
+<h3>Red Label</h3>
+<p class="prix">8000 FCFA</p>
+<p style="color:red;font-weight:bold;">⚠ Stock limité</p>
+<a href="https://wa.me/22662003688?text=Bonjour je veux commander Red Label" class="btn">Commander</a>
+</div>
 
-        <div class="carte">
-            <img src="jack-daniel.jpg" alt="Jack Daniel's à Ouagadougou" class="produit-img">
-            <h3>Jack Daniel's</h3>
-            <p class="prix">14000 FCFA</p>
-            <a href="https://wa.me/22662003688?text=Bonjour je veux commander Jack Daniels" class="btn">Commander</a>
-        </div>
+<div class="carte">
+<img src="jack-daniel.jpg" class="produit-img">
+<h3>Jack Daniel's</h3>
+<p class="prix">14000 FCFA</p>
+<a href="https://wa.me/22662003688?text=Bonjour je veux commander Jack Daniels" class="btn">Commander</a>
+</div>
 
-        <div class="carte">
-            <img src="double-black.jpg" alt="Double Black à Ouagadougou" class="produit-img">
-            <h3>Double Black</h3>
-            <p class="prix">20000 FCFA</p>
-            <a href="https://wa.me/22662003688?text=Bonjour je veux commander Double Black" class="btn">Commander</a>
-        </div>
+<div class="carte">
+<img src="double-black.jpg" class="produit-img">
+<h3>Double Black</h3>
+<p class="prix">20000 FCFA</p>
+<a href="https://wa.me/22662003688?text=Bonjour je veux commander Double Black" class="btn">Commander</a>
+</div>
 
-        <div class="carte">
-            <img src="ricard.jpg" alt="Ricard à Ouagadougou" class="produit-img">
-            <h3>Ricard</h3>
-            <p class="prix">9000 FCFA</p>
-            <a href="https://wa.me/22662003688?text=Bonjour je veux commander Ricard" class="btn">Commander</a>
-        </div>
+<div class="carte">
+<img src="ricard.jpg" class="produit-img">
+<h3>Ricard</h3>
+<p class="prix">9000 FCFA</p>
+<a href="https://wa.me/22662003688?text=Bonjour je veux commander Ricard" class="btn">Commander</a>
+</div>
 
-        <div class="carte">
-            <img src="black-label.jpg" alt="Black Label à Ouagadougou" class="produit-img">
-            <h3>Black Label</h3>
-            <p class="prix">17000 FCFA</p>
-            <a href="https://wa.me/22662003688?text=Bonjour je veux commander Black Label" class="btn">Commander</a>
-        </div>
+<div class="carte">
+<img src="black-label.jpg" class="produit-img">
+<h3>Black Label</h3>
+<p class="prix">17000 FCFA</p>
+<a href="https://wa.me/22662003688?text=Bonjour je veux commander Black Label" class="btn">Commander</a>
+</div>
 
-    </div>
+</div>
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p>📍 Ouagadougou - 1200 Logements</p>
-    <p>📞 05 84 30 56</p>
-    <p>📲 WhatsApp : 62 00 36 88</p>
+<h2>Contact</h2>
+<p>📍 Ouagadougou - 1200 Logements</p>
+<p>📞 05 84 30 56</p>
+<p>📲 WhatsApp : 62 00 36 88</p>
+
+<a href="tel:+22605843056" class="btn">📞 Appeler maintenant</a>
+
+<iframe 
+src="https://www.google.com/maps?q=1200+Logements+Ouagadougou&output=embed"
+width="100%" 
+height="250" 
+style="border:0; margin-top:20px;" 
+loading="lazy">
+</iframe>
+
 </section>
 
 <footer>
-    <p>L'abus d'alcool est dangereux pour la santé. Vente interdite aux mineurs.</p>
-    <p>© 2026 ZINKONE Jeremi</p>
+<p>L'abus d'alcool est dangereux pour la santé. Vente interdite aux mineurs.</p>
+<p>© 2026 ZINKONE Jeremi - Ouagadougou</p>
 </footer>
 
 </body>
