@@ -4,247 +4,131 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Boutique alcool à Ouagadougou. ZINKONE Jeremi propose Red Label, Jack Daniel's, Double Black, Ricard, Black Label avec livraison rapide à Ouaga.">
-<meta name="keywords" content="alcool Ouagadougou, whisky Ouaga, Red Label Burkina, Jack Daniels Ouagadougou, livraison boisson Ouaga">
-<meta name="author" content="ZINKONE Jeremi">
-
-<title>Boutique Alcool Ouagadougou | ZINKONE Jeremi</title>
+<title>Boutique Premium Whisky Ouagadougou</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+body{background:#000;color:white;}
+
+header{
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url('whisky-bg.jpg');
+background-size:cover;
+padding:60px 20px;
+text-align:center;
+border-bottom:2px solid gold;
 }
 
-body{
-    background:#000;
-    color:white;
+h1{color:gold;font-size:32px;}
+
+.hero-text{margin-top:15px;font-size:18px;}
+
+.badge{color:#ff9800;font-weight:bold;margin-top:10px;}
+
+nav{padding:15px;text-align:center;}
+nav a{color:gold;margin:0 15px;text-decoration:none;font-weight:bold;}
+
+.container{padding:40px 20px;}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
-/* HEADER */
-.header-luxe{
-    text-align:center;
-    padding:30px 20px;
-    background:linear-gradient(black,#111);
-    border-bottom:2px solid gold;
+.card{
+background:#111;
+border:1px solid gold;
+border-radius:15px;
+padding:20px;
+text-align:center;
+transition:0.3s;
+box-shadow:0 0 15px rgba(255,215,0,0.2);
 }
 
-.logo{
-    width:220px;
-    margin-bottom:10px;
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px rgba(255,215,0,0.5);
 }
 
-.header-luxe h1{
-    color:gold;
-    font-size:28px;
-    letter-spacing:2px;
-}
+.card img{width:100%;height:250px;object-fit:cover;border-radius:10px;}
 
-.slogan{
-    color:gold;
-    font-style:italic;
-    margin-top:10px;
-}
+.price{color:gold;font-size:20px;margin:10px 0;font-weight:bold;}
 
-/* NAV */
-nav{
-    text-align:center;
-    padding:15px;
-}
-
-nav a{
-    color:gold;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:#ff9800;
-}
-
-/* HERO */
-.hero{
-    text-align:center;
-    padding:50px 20px;
-}
-
-.hero h2{
-    font-size:35px;
-    color:gold;
-    margin-bottom:15px;
-}
-
-/* SECTIONS */
-section{
-    padding:40px 20px;
-    text-align:center;
-}
-
-/* PRODUITS */
-.produits-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    margin-top:30px;
-}
-
-.carte{
-    background:#111;
-    border:1px solid gold;
-    padding:20px;
-    border-radius:10px;
-    transition:0.3s;
-    animation:fadeIn 1s ease-in-out;
-}
-
-.carte:hover{
-    transform:scale(1.05);
-}
-
-@keyframes fadeIn{
-    from{opacity:0; transform:translateY(20px);}
-    to{opacity:1; transform:translateY(0);}
-}
-
-.produit-img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:8px;
-}
-
-.prix{
-    color:gold;
-    font-weight:bold;
-    margin:10px 0;
-    font-size:18px;
-}
-
-/* BOUTON */
 .btn{
-    background:gold;
-    color:black;
-    padding:10px 15px;
-    text-decoration:none;
-    border-radius:5px;
-    display:inline-block;
-    font-weight:bold;
-    transition:0.3s;
+background:gold;color:black;padding:12px 15px;border-radius:5px;
+display:inline-block;margin-top:10px;text-decoration:none;font-weight:bold;
 }
 
-.btn:hover{
-    background:#d4af37;
+.btn:hover{background:#d4af37;}
+
+.footer{background:#111;text-align:center;padding:30px;font-size:14px;}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+color:white;
+text-decoration:none;
 }
 
-/* CONTACT */
-#contact{
-    background:#111;
-}
-
-/* FOOTER */
-footer{
-    background:#222;
-    text-align:center;
-    padding:20px;
-    font-size:14px;
-}
-
-@media(max-width:600px){
-    .header-luxe h1{
-        font-size:22px;
-    }
-}
 </style>
 </head>
 
 <body>
 
-<header class="header-luxe">
-    <img src="logo.png" alt="Logo ZINKONE Jeremi" class="logo">
-    <h1>Boutique Alcool à Ouagadougou</h1>
-    <p>Whisky, Red Label, Jack Daniel's, Double Black, Ricard et autres boissons premium avec livraison rapide à Ouaga.</p>
-    <p class="slogan">L'élégance dans chaque bouteille</p>
+<header>
+<h1>🥃 Boutique Whisky Premium</h1>
+<p class="hero-text">Red Label • Jack Daniel's • Double Black • Ricard</p>
+<p class="badge">🔥 Livraison rapide à Ouaga • Paiement à la livraison</p>
+<p>⭐⭐⭐⭐⭐ +200 clients satisfaits</p>
 </header>
 
 <nav>
-    <a href="#produits">Produits</a>
-    <a href="#contact">Contact</a>
+<a href="#">Produits</a>
+<a href="#">Contact</a>
 </nav>
 
-<section class="hero">
-    <h2>Boissons 100% Authentiques</h2>
-    <p>Red Label • Jack Daniel's • Double Black • Ricard • Black Label</p>
-</section>
+<div class="container">
+<h2 style="text-align:center;color:gold;">Nos Produits</h2>
 
-<section id="produits">
-<h2>Nos Produits</h2>
+<div class="grid">
 
-<div class="produits-container">
-
-<div class="carte">
-<img src="red-label.jpg" class="produit-img">
+<div class="card">
+<img src="red-label.jpg">
 <h3>Red Label</h3>
-<p class="prix">8000 FCFA</p>
-<p style="color:red;font-weight:bold;">⚠ Stock limité</p>
-<a href="https://wa.me/22662003688?text=Bonjour je veux commander Red Label" class="btn">Commander</a>
+<p class="price">8000 FCFA</p>
+<p style="color:red;">⚠ Stock limité</p>
+<a href="https://wa.me/22662003688?text=Je veux Red Label" class="btn">Commander</a>
 </div>
 
-<div class="carte">
-<img src="jack-daniel.jpg" class="produit-img">
+<div class="card">
+<img src="jack.jpg">
 <h3>Jack Daniel's</h3>
-<p class="prix">14000 FCFA</p>
-<a href="https://wa.me/22662003688?text=Bonjour je veux commander Jack Daniels" class="btn">Commander</a>
+<p class="price">14000 FCFA</p>
+<a href="#" class="btn">Commander</a>
 </div>
 
-<div class="carte">
-<img src="double-black.jpg" class="produit-img">
+<div class="card">
+<img src="double.jpg">
 <h3>Double Black</h3>
-<p class="prix">20000 FCFA</p>
-<a href="https://wa.me/22662003688?text=Bonjour je veux commander Double Black" class="btn">Commander</a>
-</div>
-
-<div class="carte">
-<img src="ricard.jpg" class="produit-img">
-<h3>Ricard</h3>
-<p class="prix">9000 FCFA</p>
-<a href="https://wa.me/22662003688?text=Bonjour je veux commander Ricard" class="btn">Commander</a>
-</div>
-
-<div class="carte">
-<img src="black-label.jpg" class="produit-img">
-<h3>Black Label</h3>
-<p class="prix">17000 FCFA</p>
-<a href="https://wa.me/22662003688?text=Bonjour je veux commander Black Label" class="btn">Commander</a>
+<p class="price">20000 FCFA</p>
+<a href="#" class="btn">Commander</a>
 </div>
 
 </div>
-</section>
+</div>
 
-<section id="contact">
-<h2>Contact</h2>
-<p>📍 Ouagadougou - 1200 Logements</p>
+<div class="footer">
+<p>📍 Ouagadougou</p>
 <p>📞 05 84 30 56</p>
-<p>📲 WhatsApp : 62 00 36 88</p>
+<p>L'abus d'alcool est dangereux pour la santé</p>
+</div>
 
-<a href="tel:+22605843056" class="btn">📞 Appeler maintenant</a>
-
-<iframe 
-src="https://www.google.com/maps?q=1200+Logements+Ouagadougou&output=embed"
-width="100%" 
-height="250" 
-style="border:0; margin-top:20px;" 
-loading="lazy">
-</iframe>
-
-</section>
-
-<footer>
-<p>L'abus d'alcool est dangereux pour la santé. Vente interdite aux mineurs.</p>
-<p>© 2026 ZINKONE Jeremi - Ouagadougou</p>
-</footer>
+<a href="https://wa.me/22662003688" class="whatsapp">💬</a>
 
 </body>
 </html>
